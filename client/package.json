@@ -2,7 +2,6 @@
   "name": "mern-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://shop-shop-902-58ee95a973c6.herokuapp.com/",
   "dependencies": {
     "@apollo/client": "^3.3.7",
     "@stripe/stripe-js": "^1.54.1",
