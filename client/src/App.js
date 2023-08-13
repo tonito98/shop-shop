@@ -40,7 +40,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <HashRouter>
+      <Router>
         <div>
           <StoreProvider>
           <Nav />
@@ -55,7 +55,7 @@ function App() {
           </Switch>
           </StoreProvider>
         </div>
-      </HashRouter>
+      </Router>
     </ApolloProvider>
   );
 }
