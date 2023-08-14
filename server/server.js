@@ -38,8 +38,8 @@ app.get("/*", function(req, res) {
 }
 
 db.once('open', () => {
-  app.listen(PORT, () => {
-    console.log(`API server running on port ${PORT}!`);
+  app.listen(PORT).then(( {url}) => {
+    console.log(`API server running on at ${url}!`);
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
