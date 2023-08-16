@@ -14,7 +14,7 @@ const server = new ApolloServer({
   context: authMiddleware
 });
 
-server.applyMiddleware({ app, path: "/graph" });
+server.applyMiddleware({ app, path: "/graphql" });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
